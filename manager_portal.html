@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager portal</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="initManagerPortal()">
+    <div class="container">
+        <section class="hero-section1">
+            <div class="hero-details1">
+                <div class="detail-card1">
+                    <div class="detail-header1">
+                        <div class="detail-icon1">
+                            <svg width="140" height="120" viewBox="0 0 140 120" xmlns="http://www.w3.org/2000/svg">
+
+                                <!-- Bank Roof -->
+                                <polygon points="30,45 70,20 110,45" fill="#2563eb" />
+
+                                <!-- Columns -->
+                                <rect x="40" y="45" width="10" height="35" fill="#93c5fd" />
+                                <rect x="65" y="45" width="10" height="35" fill="#93c5fd" />
+                                <rect x="90" y="45" width="10" height="35" fill="#93c5fd" />
+
+                                <!-- Cash -->
+                                <rect x="45" y="85" width="50" height="20" rx="5" fill="#22c55e" />
+                                <text x="70" y="100" font-size="14" font-weight="bold" text-anchor="middle"
+                                    fill="#064e3b">₹</text>
+
+                            </svg>
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-label1">Total Transactions</div>
+                            <div class="detail-value1" id="totalTransaction"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-card1">
+                    <div class="detail-header1">
+                        <div class="detail-icon1">
+
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                                <!-- Circle -->
+                                <circle cx="60" cy="60" r="50" fill="#fee2e2" />
+
+                                <!-- Arrow Up -->
+                                <path d="M60 75 V40 M50 50 L60 40 L70 50" stroke="#dc2626" stroke-width="6"
+                                    fill="none" />
+
+                                <!-- Rupee -->
+                                <text x="60" y="95" font-size="18" text-anchor="middle" fill="#7f1d1d">₹</text>
+
+                            </svg>
+
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-label1">Today's Transactions</div>
+                            <div class="detail-value1" id="todayTransaction"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-card1">
+                    <div class="detail-header1">
+                        <div class="detail-icon1">
+                            <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                                <!-- Circle -->
+                                <circle cx="60" cy="60" r="45" fill="#e0f2fe" />
+
+                                <!-- Refresh Arrow -->
+                                <path d="M40 60 A20 20 0 1 1 65 80" stroke="#0284c7" stroke-width="5" fill="none" />
+                                <polygon points="65,75 70,85 60,85" fill="#0284c7" />
+
+                                <!-- Rupee -->
+                                <text x="60" y="65" font-size="20" text-anchor="middle" fill="#0c4a6e">₹</text>
+
+                            </svg>
+
+
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-label1">Today's Repayments</div>
+                            <div class="detail-value1" id="todayCollections"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="loan-contents">
+            <div class="heading">
+                <h1>Loan Requests</h1>
+            </div>
+            <div class="request-container" id="loanRequestsTable">
+                    <!-- <div class="user-details">
+                        <div class="users">Name : santha</div>
+                        <div class="users">Name : santha</div>
+                        <div class="users">Name : santha</div>
+                        <div class="users">Name : santha</div>
+                        <div class="users">Name : santha</div>
+                        <div class="actions">
+                            <button class="act-btn" id="btn1">Approve</button>
+                            <button class="act-btn" id="btn2">Reject</button>
+                        </div>
+                    </div> -->
+            </div>
+            <button id="loadMoreBtn" onclick="loadMoreApplied()">
+                See More
+            </button>
+        </section>
+        <section class="loan-contents">
+            <div class="heading">
+                <h1>Active Loans</h1>
+            </div>
+            <div class="active-loans">
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Loan ID </th>
+                            <th>Borrower Name</th>
+                            <th>Loan Amount</th>
+                            <th>Paid Amount</th>
+                            <th>Remaining Due</th>
+                        </tr>
+                    </thead>
+                    <tbody id="activeLoansTable">
+                        <!-- JS will fill -->
+                    </tbody>
+                </table>
+                <button id="loadMoreBtn" onclick="loadMore()">
+                    See More
+                </button>
+
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

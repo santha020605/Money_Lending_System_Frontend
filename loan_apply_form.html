@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Apply Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Loan Application</h1>
+        </div>
+        <div class="form1">
+            <div class="s">
+                <form action="" class="applyform" onsubmit="applyLoan(event)">
+                    <select name="loantype" id="loanTypes" required>
+                        <option value="">--Select Loan Type---</option>
+                        <option value="PERSONAL">Personal Loan</option>
+                        <option value="HOME">Home Loan</option>
+                    <option value="BUSINESS">Business Loan</option>
+                    </select>
+                    <input type="number" id="loanAmount" placeholder="Enter Loan Amount" min="20000" max="5000000" step="1000" required>
+                    <input type="number" id="tenure" min="12" max="72" step="6" placeholder="Tenure(Months)" required>
+                    <div>
+                        <p><input type="checkbox" required> Accept the privacy policy and terms of conditions.</p>
+                    </div>
+                    <button class="loanapplybtn" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

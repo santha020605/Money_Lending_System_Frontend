@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrower portal</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="initBorrowerPortal()">
+
+    <div class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h5 class="hero-title">Welcome<strong id="borrowerName"></strong></h5>
+            </div>
+
+            <div class="loan-status">
+                <div class="applied-loans">
+                    <div id="activeBox" class="box">
+                        <h1 class="active-title">Repayment Form</h1>
+                        <ul id="activeList">
+                            <li>Loan ID : <strong id="loanID"></strong></li>
+                            <li>EMI Amount : <strong id="EMIAmount"></strong></li>
+                            <li>Date : <strong id="dueDate"></strong></li>
+                            <li><button>Repay</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 id="loanStatusHeader"></h1>
+        <section class="loan-details">
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Loan Id</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="loanId"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Loan Type</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="loanType"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Loan Amount</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="loanAmount"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Interest</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="interest"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Total Amount</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="totalAmount"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Loan Tenure</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="tenure"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Monthly EMI</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="emiAmount"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Total Paid</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="paid"></h2>
+            </div>
+            <div class="loan-header">
+                <div class="header1">
+                <h1>Remaining Due</h1>
+                </div>
+                <div class="loan1 loan-content"></div>
+                <h2 id="remaining"></h2>
+            </div>
+
+        </section>
+        <section class="contact-form">
+            <div class="contact-details">
+                <div class="enquiry-form">
+                    <h1>Enquiry / Feedback</h1>
+                    <form action="">
+                       <input type="text" placeholder="Loan ID">
+                       <input type="tel" placeholder="Mobile number">
+                       <select name="select Issue" id="selectIssue">
+                        <option value="">--Select Issue--</option>
+                        <option value="Repayment issue">Repayment issues</option>
+                        <option value="Loan details issue">Details issues</option>
+                       </select>
+                       <textarea name="" id="" cols="1" rows="1" ></textarea>
+                       <button class="Feedbackbtn">Submit</button>
+                    </form>
+                </div>
+                <div  class="our-details">
+                    <h1>  .</h1>
+                    <h2>Contact Us :</h2>
+                    <h3>Mail : santhakpr37@gmail.com</h3>
+                    <h3>Phone : 444-xxx-444</h3>
+                    <h3>Main Branch Address : MKS BUILDING,MOOVENTHAR STREET,KEELAPVOOR,TENKASI DT - 627806.</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
