@@ -14,7 +14,7 @@ function toggleAdminLogin() {
 
 }
 
-const apiUrl = "http://localhost:8080/api";
+const apiUrl = "https://moneylendingsystembackend-production.up.railway.app/api";
 function loginBorrower() {
     const borrowerCredentials = {
         phone: document.getElementById("BorrowerPhone").value,
