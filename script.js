@@ -38,7 +38,7 @@ document.getElementById("paymentTypesValue").addEventListener("change",function(
 
 });
 });
-const apiUrl = "https://moneylendingsystembackend-production.up.railway.app/api";
+const apiUrl = "https://https://moneylendingsystembackend-production-ab8d.up.railway.app/api";
 function loginBorrower() {
     const borrowerCredentials = {
         phone: document.getElementById("BorrowerPhone").value,
