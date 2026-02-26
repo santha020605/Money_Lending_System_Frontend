@@ -41,16 +41,17 @@ body {
 /* Hero Section - Split Layout */
 .hero-section {
 	display: grid;
-	grid-template-columns: 1fr 1fr ;
+	grid-template-columns: 1fr 1fr;
 	min-height: 85vh;
 	align-items: center;
 	gap: 80px;
 	padding: 80px 60px;
 	position: relative;
 }
+
 .hero-section1 {
 	display: grid;
-	grid-template-columns: 1fr ;
+	grid-template-columns: 1fr;
 	min-height: 60vh;
 	align-items: center;
 	gap: 80px;
@@ -58,7 +59,7 @@ body {
 	position: relative;
 }
 
-.logins{
+.logins {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
@@ -67,7 +68,8 @@ body {
 	padding: 80px 60px;
 	position: relative;
 }
-.loans{
+
+.loans {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -76,35 +78,39 @@ body {
 	padding: 80px 60px;
 	position: relative;
 }
-.SignUp-form{
+
+.SignUp-form {
 	display: none;
 	margin-top: 20px;
-    padding: 20px;
-    border: 1px solid var(--bg-light);
+	padding: 20px;
+	border: 1px solid var(--bg-light);
 	animation: fadeInUp 0.8s ease-out;
 
 }
-.loan-form{
+
+.loan-form {
 	display: block;
 	margin-top: 20px;
-    padding: 20px;
-    border: 1px solid var(--bg-light);
+	padding: 20px;
+	border: 1px solid var(--bg-light);
 	animation: fadeInUp 0.8s ease-out;
 
 }
-.user-form{
+
+.user-form {
 	display: none;
 	margin-top: 20px;
-    padding: 20px;
-    border: 1px solid var(--bg-light);
+	padding: 20px;
+	border: 1px solid var(--bg-light);
 	animation: fadeInUp 0.8s ease-out;
 
 }
-.admin-form{
+
+.admin-form {
 	display: none;
 	margin-top: 20px;
-    padding: 20px;
-    border: 1px solid var(--bg-light);
+	padding: 20px;
+	border: 1px solid var(--bg-light);
 	animation: fadeInUp 0.8s ease-out;
 
 }
@@ -167,6 +173,7 @@ body {
 	gap: 24px;
 	padding-right: 40px;
 }
+
 .hero-details1 {
 	display: flex;
 	flex-direction: row;
@@ -185,6 +192,7 @@ body {
 	position: relative;
 	overflow: hidden;
 }
+
 .detail-card1 {
 	background: var(--text-primary);
 	padding: 40px;
@@ -210,6 +218,7 @@ body {
 	box-shadow: 0 8px 32px rgba(149, 124, 98, 0.15);
 	border-left-width: 8px;
 }
+
 .detail-header {
 	display: flex;
 	align-items: center;
@@ -218,6 +227,7 @@ body {
 	position: relative;
 	z-index: 1;
 }
+
 .detail-header1 {
 	display: flex;
 	align-items: center;
@@ -244,16 +254,19 @@ body {
 	stroke: black;
 	stroke-width: 2;
 }
-svg.buss{
+
+svg.buss {
 	width: 100px;
 	height: 100px;
 	margin-left: 20px;
 	stroke: #000000;
 	stroke-width: 4;
 }
+
 .detail-info {
 	flex: 1;
 }
+
 .data-table {
 	width: 100%;
 	border-collapse: collapse;
@@ -262,22 +275,24 @@ svg.buss{
 	overflow: hidden;
 	box-shadow: 0 0 10px rgba(233, 208, 208, 0.1);
 }
-.data-table th, 
+
+.data-table th,
 .data-table td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
 }
 
 .data-table th {
-  background: var(--bg-cream);
-  color: var(--text-primary);
+	background: var(--bg-cream);
+	color: var(--text-primary);
 }
 
 .data-table tr:hover {
 	background: rgba(0, 0, 0, 0.144);
 }
-.loan-contents{
+
+.loan-contents {
 	display: grid;
 	grid-template-columns: 1fr;
 	min-height: 40vh;
@@ -295,6 +310,7 @@ svg.buss{
 	color: var(--primary);
 	letter-spacing: -0.5px;
 }
+
 .detail-label1 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2rem;
@@ -302,12 +318,14 @@ svg.buss{
 	text-align: center;
 	color: var(--accent-light);
 }
-#loadMoreBtn{
+
+#loadMoreBtn {
 	padding: 0;
 	width: fit-content;
 	font-size: 0.6rem;
 	background: none;
 }
+
 .detail-value {
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -316,12 +334,13 @@ svg.buss{
 	letter-spacing: 1.5px;
 	margin-bottom: 6px;
 }
+
 .detail-value1 {
 	font-size: 1.3rem;
 	font-weight: 900;
 	color: var(--bg-light);
 	letter-spacing: 1.5px;
-	
+
 }
 
 .form-title {
@@ -353,29 +372,35 @@ textarea {
 	transition: all 0.3s ease;
 	outline: none;
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
-#borrowerName{
+
+#borrowerName {
 	font-size: 4rem;
 }
-#loanStatusHeader{
+
+#loanStatusHeader {
 	text-align: center;
 	color: var(--bg-light);
 }
-option{
+
+option {
 	background: var(--primary);
 	font-family: 'Work Sans', sans-serif;
 	color: var(--bg-light);
 
 }
-.Feedbackbtn{
+
+.Feedbackbtn {
 	padding: 5px;
 	width: 100px;
 	height: 30px;
 }
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -413,28 +438,33 @@ button {
 	position: relative;
 	overflow: hidden;
 }
-button.adminbtn{
+
+button.adminbtn {
 	background: black;
 	color: var(--accent);
 }
+
 button:hover {
 	background: var(--accent-dark);
 	transform: translateY(-2px);
 	box-shadow: 0 8px 24px rgba(149, 124, 98, 0.3);
 }
-.request-container{
+
+.request-container {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
 	padding-top: 20px;
-	gap:2rem;
+	gap: 2rem;
 	background: transparent;
 }
-.actions{
+
+.actions {
 	display: flex;
 	gap: 2rem;
 }
-.user-details{
+
+.user-details {
 	text-align: center;
 	padding: 30px;
 	display: grid;
@@ -446,19 +476,23 @@ button:hover {
 	font-size: 1.5rem;
 	grid-template-columns: 1fr 1fr;
 }
-.act-btn{
+
+.act-btn {
 	padding: 15px;
 }
-#btn1:hover{
+
+#btn1:hover {
 	background-color: #93ff4b;
 	color: #000000;
 	box-shadow: 0px 0px 20px #93ff4b;
 }
-#btn2:hover{
+
+#btn2:hover {
 	background-color: #ff6b57;
 	color: #000000;
 	box-shadow: 0px 0px 20px #ff6b57;
 }
+
 /* Animations */
 @keyframes fadeInUp {
 	from {
@@ -485,6 +519,7 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+
 	.hero-section,
 	.hero-section1 {
 		grid-template-columns: 1fr;
@@ -492,30 +527,38 @@ button:hover {
 		padding: 60px 40px;
 		min-height: auto;
 	}
-	.logins{
+
+	.logins {
 		grid-template-columns: 1fr;
-        gap: 60px;
+		gap: 60px;
 	}
-	.user-details{
+
+	.user-details {
 		font-size: 0.8rem;
 		grid-template-columns: 1fr;
 	}
-	.act-btn{
+
+	.act-btn {
 		padding: 10px;
 	}
-	.contact-details{
+
+	.contact-details {
 		flex-direction: column;
 	}
-	.data-table{
+
+	.data-table {
 		font-size: 0.5rem;
 	}
-	.loan-details h1,h2{
+
+	.loan-details h1,
+	h2 {
 		font-size: 1rem;
 	}
 
 	.hero-section::after {
 		display: none;
 	}
+
 	.hero-content,
 	.hero-details,
 	.hero-details1 {
@@ -523,6 +566,7 @@ button:hover {
 		padding-right: 0;
 		flex-direction: column;
 	}
+
 	.hero-title {
 		font-size: 4.5rem;
 	}
@@ -530,17 +574,20 @@ button:hover {
 	.detail-card:nth-child(2),
 	.detail-card:nth-child(3),
 	.detail-card1:nth-child(2),
-	.detail-card1:nth-child(3){
+	.detail-card1:nth-child(3) {
 		margin-left: 0;
 	}
 
 }
 
 @media (max-width: 768px) {
-	.hero-section,.hero-section1 {
+
+	.hero-section,
+	.hero-section1 {
 		padding: 48px 24px;
 	}
-	.logins{
+
+	.logins {
 		padding: 48px 24px;
 	}
 
@@ -556,9 +603,11 @@ button:hover {
 	.detail-card {
 		padding: 32px 24px;
 	}
-	.detail-card1{
+
+	.detail-card1 {
 		padding: 10px 5px;
 	}
+
 	.detail-icon {
 		width: 56px;
 		height: 56px;
@@ -572,6 +621,7 @@ button:hover {
 	.detail-value {
 		font-size: 1.5rem;
 	}
+
 	.form-title {
 		font-size: 1.5rem;
 	}
@@ -587,15 +637,22 @@ button:hover {
 		font-size: 2.25rem;
 	}
 }
-.active-loans{
+
+.active-loans {
 	text-align: center;
 }
 
-.active-title{
+.active-title {
 	font-size: 2rem;
 	color: var(--bg-light);
 }
-.loan-status{
+
+.paymentTypes {
+	display: flex;
+	gap: 2.5rem;
+}
+
+.loan-status {
 	border-style: solid;
 	border-radius: 30px;
 	border-top: #f5f1ed;
@@ -604,15 +661,18 @@ button:hover {
 	min-height: fit-content;
 	line-height: 2rem;
 }
-#activeBox{
+
+#activeBox {
 	text-align: center;
 	line-height: 3rem;
 }
-ul{
+
+ul {
 	list-style: none;
 	color: var(--accent-light);
 }
-.loan-details{
+
+.loan-details {
 	line-height: 4rem;
 	margin: 2rem;
 	border-style: solid;
@@ -620,56 +680,96 @@ ul{
 	color: var(--bg-cream);
 	border-radius: 30px;
 }
-.loan-header{
+
+.loan-header {
 	display: flex;
 	justify-content: space-between;
 	margin-left: 40px;
 	margin-right: 40px;
 }
-.header1 h1{
+
+.header1 h1 {
 	color: var(--accent);
 }
-.form1{
+
+.form1 {
 	justify-content: center;
 	margin: 5rem;
 
 }
-.applyform{
+
+.applyform {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	row-gap: 1rem;
 }
-.loanapplybtn{
+
+.paymentForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+}
+
+.paymentForms {
+	display: none;
+	align-items: center;
+	text-align: center;
+}
+
+.payform button {
+	width: 300px;
+	text-align: center;
+	height: 1px;
+	font-size: 9px;
+}
+
+.payform {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	gap: 1 rem;
+	font-size: x-small;
+}
+
+.loanapplybtn {
 	margin-top: 2rem;
 	padding: 20px;
 	width: 400px;
 	height: 60px;
 }
-.heading{
+
+.heading {
 	text-align: center;
 	margin-top: 2rem;
 }
-.enquiry-form{
+
+.enquiry-form {
 	display: block;
 	margin-top: 20px;
-    padding: 20px;
+	padding: 20px;
 	animation: fadeInUp 0.8s ease-out;
 }
-.contact-form{
+
+.contact-form {
 	line-height: 3rem;
 	margin: 4rem;
 }
-.contact-details{
+
+.contact-details {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 3rem;
 	align-items: center;
 }
-.our-details{
+
+.our-details {
 	color: var(--text-secondary);
 	font-family: 'Poppins', sans-serif;
 }
-.our-details h3{
+
+.our-details h3 {
 	color: var(--bg-light);
 }

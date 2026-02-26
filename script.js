@@ -13,7 +13,31 @@ function toggleAdminLogin() {
     form.style.display = (form.style.display === "none") ? "block" : "none";
 
 }
+document.addEventListener("DOMContentLoaded",function(){
+document.getElementById("paymentTypesValue").addEventListener("change",function(){
 
+    document.getElementById("UPI").style.display = "none";
+    document.getElementById("Card").style.display = "none";
+    document.getElementById("NetBanking").style.display = "none";
+    document.getElementById("Paytm").style.display = "none";
+
+
+    var val = this.value;
+    if(val === "UPI"){
+        document.getElementById("UPI").style.display = "block";
+    }
+    else if(val === "Card"){
+        document.getElementById("Card").style.display = "block";
+    }
+    else if(val === "NetBanking"){
+        document.getElementById("NetBanking").style.display = "block";
+    }
+    else if(val === "Paytm"){
+        document.getElementById("Paytm").style.display = "block";
+    }
+
+});
+});
 const apiUrl = "https://moneylendingsystembackend-production.up.railway.app/api";
 function loginBorrower() {
     const borrowerCredentials = {
@@ -268,4 +292,7 @@ function rejectLoan(loanID){
         dashBoard();
     });
     
+}
+function openPayment(){
+    window.location.href = "repayment_form.html";
 }
